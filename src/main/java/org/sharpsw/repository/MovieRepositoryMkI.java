@@ -6,15 +6,20 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 class MovieRepositoryMkI implements MovieRepository {
     private String folder;
+    private static final Logger logger = LoggerFactory.getLogger(MovieRepositoryMkI.class);
 
     public MovieRepositoryMkI(String folder) {
         this.folder = folder;
     }
 
     public Map<String, Set<String>> loadData() throws IOException {
+        logger.info("Starting files loading");
         Map<String, Set<String>> repository = new HashMap<>();
 
         Files.list(Paths.get(folder)).forEach(file -> {
@@ -35,6 +40,7 @@ class MovieRepositoryMkI implements MovieRepository {
 
         });
 
+        logger.info("Finished file loading");
         return repository;
     }
 

@@ -50,6 +50,7 @@ data/jiminy-cricket-s-christmas.txt
 # Output example
 
 Output example for this program is as follows:
+```
 Foram encontradas 53 ocorrências pelo termo "walt disney".  
 Os arquivos que possuem "walt disney" são:  
 data/a-cowboy-needs-a-horse.txt
@@ -77,3 +78,4 @@ data/funny-little-bunnies.txt
 data/gallopin-gaucho.txt
 data/good-scouts.txt
 data/goofy-and-wilbur.txt
+```

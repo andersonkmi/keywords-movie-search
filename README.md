@@ -48,3 +48,32 @@ data/jiminy-cricket-s-christmas.txt
 ```
 
 # Output example
+
+Output example for this program is as follows:
+Foram encontradas 53 ocorrências pelo termo "walt disney".  
+Os arquivos que possuem "walt disney" são:  
+data/a-cowboy-needs-a-horse.txt
+data/alice-and-the-three-bears.txt
+data/alice-helps-the-romance.txt
+data/alice-s-fishy-story.txt
+data/alpine-climbers.txt
+data/billposters.txt
+data/bone-trouble.txt
+data/bootle-beetle.txt
+data/canine-caddy.txt
+data/clown-of-the-jungle.txt
+data/cock-o-the-walk.txt
+data/cured-duck.txt
+data/dog-watch.txt
+data/donald-s-dream-voice.txt
+data/donald-s-snow-fight.txt
+data/dude-duck.txt
+data/el-gaucho-goofy.txt
+data/fall-out-fall-in.txt
+data/father-noah-s-ark.txt
+data/fathers-are-people.txt
+data/football-now-and-then.txt
+data/funny-little-bunnies.txt
+data/gallopin-gaucho.txt
+data/good-scouts.txt
+data/goofy-and-wilbur.txt

@@ -13,6 +13,7 @@ class MovieRepositoryMkI implements MovieRepository {
     public MovieRepositoryMkI(String folder) {
         this.folder = folder;
     }
+
     public Map<String, Set<String>> loadData() throws IOException {
         Map<String, Set<String>> repository = new HashMap<>();
 

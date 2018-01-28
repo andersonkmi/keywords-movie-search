@@ -9,11 +9,11 @@ import java.util.Set;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-public class MovieRepositoryTest {
+public class MovieRepositoryMk1Test {
     @Test
     public void testCase001() throws IOException {
-        MovieRepository classUnderTest = new MovieRepository();
-        Map<String, Set<String>> repository = classUnderTest.loadFiles("data");
+        MovieRepository classUnderTest = new MovieRepositoryMkI("data");
+        Map<String, Set<String>> repository = classUnderTest.loadData();
         assertThat(repository.isEmpty(), is(false));
     }
 }

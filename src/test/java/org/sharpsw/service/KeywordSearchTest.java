@@ -12,7 +12,7 @@ public class KeywordSearchTest {
 
     @Test
     public void testCase001() throws IOException {
-        KeywordsSearchMkI service = new KeywordsSearchMkI();
+        KeywordsSearch service = new KeywordsSearchMkI();
         Set<String> results = service.search(MovieRepositoryFactory.build(MovieRepositoryFactory.Version.MK_I), "walt", "disney");
         Assert.assertThat(results.isEmpty(), is(false));
     }

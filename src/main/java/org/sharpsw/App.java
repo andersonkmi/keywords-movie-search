@@ -23,7 +23,7 @@ public class App {
             }
 
             KeywordsSearch service = KeywordSearchFactory.build(KeywordSearchFactory.Version.MK_I);
-            Set<String> results = service.search(MovieRepositoryFactory.build(MovieRepositoryFactory.Version.MK_I), tokens.stream().toArray(String[]::new));
+            Set<String> results = service.search(MovieRepositoryFactory.build(MovieRepositoryFactory.Version.MK_I), tokens.toArray(new String[0]));
             System.out.println("Number of occurences: " + results.size());
             results.forEach(System.out::println);
         } else {

@@ -1,6 +1,7 @@
 package org.sharpsw;
 
 import org.sharpsw.repository.MovieRepositoryFactory;
+import org.sharpsw.service.KeywordSearchFactory;
 import org.sharpsw.service.KeywordsSearch;
 
 import java.io.IOException;
@@ -21,7 +22,7 @@ public class App {
                 tokens.add(tokenizer.nextToken().trim());
             }
 
-            KeywordsSearch service = new KeywordsSearch();
+            KeywordsSearch service = KeywordSearchFactory.build(KeywordSearchFactory.Version.MK_I);
             Set<String> results = service.search(MovieRepositoryFactory.build(MovieRepositoryFactory.Version.MK_I), tokens.stream().toArray(String[]::new));
             System.out.println("Number of occurences: " + results.size());
             results.forEach(System.out::println);
